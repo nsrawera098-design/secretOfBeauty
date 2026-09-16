@@ -7,7 +7,7 @@ require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/Exception.php';
 require 'PHPMailer/SMTP.php';
 
-
+$config = require __DIR__ . '/mail_config.php';
 // ==========================================
 // Mail configuration
 // ==========================================
@@ -20,18 +20,20 @@ function configureMailer(PHPMailer $mail): void
     $mail->SMTPAuth = true;
 
     // Read credentials from environment variables
-    $mail->Username = getenv('MAIL_USERNAME');
-    $mail->Password = getenv('MAIL_PASSWORD');
+   global $config;
+
+$mail->Username = $config['username'];
+$mail->Password = $config['password'];
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
     $mail->CharSet = 'UTF-8';
 
-    $mail->setFrom(
-        getenv('MAIL_USERNAME'),
-        'Belissa'
-    );
+   $mail->setFrom(
+    $config['username'],
+    'Belissa'
+);
 
     $mail->isHTML(true);
 }
