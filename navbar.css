@@ -1,0 +1,110 @@
+/* תפריט צד לעיצוב פרויקט יופי */
+#sideNav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff0f5; /* ורוד בהיר */
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+    direction: rtl;
+    border-left: 2px solid #f5c6cb;
+}
+
+#sideNav.open {
+    right: 0;
+}
+
+#sideNav img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+    border: 2px solid #f5c6cb; /* ורוד */
+}
+
+#sideNav a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #6d4c41; /* חום ורדרד */
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#sideNav a:hover {
+    background-color: #f8d7da; /* רקע ורוד בהיר */
+    color: #8b0000; /* אדום-חום */
+}
+
+/* כפתור פתיחה של התפריט */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    background-color: #d63384; /* ורוד כהה */
+    margin: 6px 0;
+    border-radius: 2px;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+}
+
+#overlay.show {
+    display: block;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #ffe6f0; /* רקע ורוד עדין */
+    border-right: 4px solid #f5c6cb;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    padding: 6px 0;
+    font-size: 0.9em;
+    color: #6f42c1;
+}
+
+.dropdown-content a:hover {
+    color: #fff;
+    background-color: #d63384; /* ורוד כהה */
+    border-radius: 3px;
+    padding-right: 8px;
+}
+
