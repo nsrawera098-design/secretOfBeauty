@@ -104,7 +104,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php if ($response): ?>
       <div class="response">
         <strong>את/ה:</strong> <?php echo htmlspecialchars($selectedQuestion); ?><br>
-        <strong>הנציג:</strong> <?php echo $response; ?>
+       <strong>הנציג:</strong>
+       <?php echo htmlspecialchars($response); ?>
       </div>
     <?php endif; ?>
 
