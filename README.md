@@ -168,8 +168,8 @@ user
 ### Home Page
 ![Home Page](screenshots/home.png)
 
-### Appointment Booking
-![Appointment Booking](screenshots/appointment.png)
+### pro Booking
+![pro Booking](screenshots/pro.png)
 
 ### Products
 ![Products](screenshots/products.png)
@@ -177,8 +177,11 @@ user
 ### Shopping Cart
 ![Shopping Cart](screenshots/cart.png)
 
-### Admin Dashboard
-![Admin Dashboard](screenshots/admin.png)
+### side Dashboard
+![side Dashboard](screenshots/side.png)
 
-### Diagnosis
-![Diagnosis](screenshots/diagnosis.png)
+### file
+![file](screenshots/file.png)
+
+### appointment
+![appointment](screenshots/appointment.png)
