@@ -162,3 +162,23 @@ Some of the main project files include:
 
 ```text
 user
+
+## Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Appointment Booking
+![Appointment Booking](screenshots/appointment.png)
+
+### Products
+![Products](screenshots/products.png)
+
+### Shopping Cart
+![Shopping Cart](screenshots/cart.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin.png)
+
+### Diagnosis
+![Diagnosis](screenshots/diagnosis.png)
