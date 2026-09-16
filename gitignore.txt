@@ -1,0 +1,4 @@
+mail_config.php
+.env
+*.log
+log_run.txt
